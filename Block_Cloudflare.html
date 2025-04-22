@@ -35,7 +35,6 @@ var req = new XMLHttpRequest();
 req.open('GET', document.location, false);
 req.send(null);
 var headers = req.getAllResponseHeaders().toLowerCase();
-var headers = req.getAllRequestHeaders().toLowerCase();
 document.write(headers);
 </script>
 </font>
