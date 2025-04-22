@@ -30,6 +30,7 @@
         <hr/>
 <font size=-2>
 <script>
+var clientIP = document.getElementById("clientIP").innerHTML;
 var req = new XMLHttpRequest();
 req.open('GET', document.location, false);
 req.send(null);
@@ -37,8 +38,6 @@ var headers = req.getAllResponseHeaders().toLowerCase();
 var headers = req.getAllRequestHeaders().toLowerCase();
 document.write(headers);
 </script>
-::CLIENT_IP::	
-::GEO::
 </font>
       </div>
       <div class="colores">
