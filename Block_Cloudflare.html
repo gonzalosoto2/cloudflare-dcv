@@ -29,16 +29,12 @@
         <p>Ha sido bloqueado por nuestra política de seguridad.</p>
         <hr/>
 <font size=-2>
-  <div id="error" class="hidden">
-      <div id="rayID">::RAY_ID::</div>
-      <div id="clientIP">::CLIENT_IP::</div>
-    </div>
 <script>
 var req = new XMLHttpRequest();
-var clientIP = document.getElementById("clientIP").innerHTML;
 req.open('GET', document.location, false);
 req.send(null);
 var headers = req.getAllResponseHeaders().toLowerCase();
+var headers = req.getAllRequestHeaders().toLowerCase();
 document.write(headers);
 </script>
 ::CLIENT_IP::	
